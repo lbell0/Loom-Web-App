@@ -4,118 +4,39 @@
 	<title>LOOM</title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css"> <!--linking html with css-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="./css/main.css">
 
 <style>
-html {
-  height: 100%;
-}
-body {
-  height: 100%;
-  margin: 0;
-}
-#textGrade {			/* ** Check if this is doing anything ** */
-  font-size: 48px;
-}
-/* ** social media logos ** */
-.fa {
-padding: 20px;
-font-size: 24px;
-width: ;
-text-align: center;
-text-decoration: none;
-border-radius: 50%;
-color: black;
-}
-#navbarColor {
-	background-attachment: fixed;
-}
-.wrapper {			/* ** Check if this is doing anything ** */
-  padding-top: 60px;
-	width: 100%;
-	background-color: ;
-	height: 50%
-}
-
-/*------LAUREN'S ADDITION------*/
-body {
-	background-image: url('img/indexbg.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
-.navbar-brand
-{
-	color: #FFF8EE!important;
-	font-family: fantasy;
-	font-weight: 800;
-	font-size: 16px;
-}
-.navbar-toggler
-{
-  border: none!important; /*impt bc overriding classes/no border*/
-}
-.jumbotron
-{
-	text-align: center;
-}
-.jumbotron h1
-{
-	color: #FFF8EE!important;
-	font-family: fantasy;
-	font-size: 65px;
-	font-weight: bolder;
-}
-.jumbotron h1::after
-{
-	content:'';
-	background: #4F473A;
-	display: block;
-	height: 2px;
-	width: 420px;
-	margin: 22px auto 5px;
-}
-.jumbo-text h3
-{
-	font-size: 19px;
-	font-weight: 100;
-	font-family: menlo;
-	margin-top: 44px;
-	letter-spacing: 1px;
-	color: #FFF8EE!important;
-}
-.container
-{
-	text-align: start;
-	margin-top: 55px;
-	opacity: 1.0;
-
-}
-.card, .card
-{
-	font-family: fantasy;
-	padding: 44px 20px;
-	opacity: 0.7;
-}
-.mid-column {	width: 10%; }
-.card:hover { opacity: 1.0; }
-.card:hover {	opacity: 1.0; }
+	body {
+		background-image: url("img/indexbg.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
 </style>
+
 </head>
 <body>
 <!-- ** NAV BAR ** -->
-<nav id = "navbarColor" class="navbar navbar-expand-lg navbar-light  navbar-fixed">
+<nav id = "navbarColor" class="navbar navbar-expand-lg navbar-dark navbar-fixed">
 <a class="navbar-brand" href="#"> </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 </button>
 <div class="collapse navbar-collapse" id="navbarText">
-	<ul class="navbar-nav mr-auto"> </ul>
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item">
+			<a class="nav-link" href="about.php">About</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="contact.php">Contact</a>
+		</li>
+	</ul>
 	<span class="navbar-text">
 		<a href="#" class="fa fa-facebook"></a>
 		<a href="#" class="fa fa-twitter"></a>
@@ -124,7 +45,7 @@ body {
 </div>
 </nav>
 <!-- ** TEXT IN PAGE MIDDLE ** -->
-<div class="jumbotron" style="margin-bottom:0; background-color: transparent;">
+<div class="jumbotron" style="background-color: transparent;">
 	<h1> L O O M </h1>
 		<div class = "jumbo-text">
 			<h3> <strong>Revolutionizing the restaurant industry.</strong></h3>
@@ -135,12 +56,12 @@ body {
 	<div class="card-deck mb-3 text-center">
 		<div class="card mb-4 box-shadow">
 			<div class="card-body-c">
-				 <a href="/Loom/login-Customer.php"><button type="button" class="btn btn-lg btn-block"><strong> I am a Customer</strong></button></a>
+				 <a href="login-Customer.php" target="_blank"><button type="button" class="btn btn-lg btn-block"><strong> I am a Customer</strong></button></a>
 			</div>
 		</div>
 		<div class="card mb-4 box-shadow">
 			<div class="card-body-r">
-					<a href="login-Restaurant.php"><button type="button" class="btn btn-lg btn-block"><strong>I am a Restaurant</strong></button></a>
+					<a href="login-Restaurant.php" target="_blank"><button type="button" class="btn btn-lg btn-block"><strong>I am a Restaurant</strong></button></a>
 			</div>
 		</div>
 	</div>

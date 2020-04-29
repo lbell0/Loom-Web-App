@@ -1,0 +1,106 @@
+@charset "UTF-8";
+html, body {
+  height: 100%
+}
+body{
+  height: 100%;
+  font-family: ;/*courier garamond candara*/
+}
+.fa {
+padding: 20px;
+font-size: 24px;
+width: ;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+color: black;
+}
+.wrapper {
+padding-top: 60px;
+width: 100%;
+background-color: ;
+height: 50%
+}
+section {
+margin: 10px 0;
+padding: 0 20px;
+padding-bottom: 10px;
+position: relative;
+}
+.navbar-toggler {
+  border: none!important; /*impt bc overriding classes/no border*/
+}
+.navbar {
+  background-color: #D6EACC;
+}
+.navbar-brand {
+  padding-top: 10px;
+  font-weight: 900;
+  font-family: papyrus;
+}
+.nav-link {
+  margin-left: 20px;
+}
+.fa {
+  padding: 20px;
+  font-size: 24px;
+  width: ;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: black;
+}
+.nav-link {
+  margin-left: 20px;
+}
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+.fix {
+  overflow: hidden
+}
+a:hover {
+  text-decoration: none
+}
+.navbar-toggler
+{
+  border: none!important;
+}
+.loginForm input[type=text], .loginForm input[type=password] {
+  margin-bottom:10px;
+}
+.loginForm input[type=submit] {
+  background:#fb044a;
+  color:#fff;
+  font-weight:700;
+}
+.container h2
+{
+  margin-top: 12%;
+  font-family: papyrus;
+  color: #black!important;
+}
+.container label,
+.footer-copyright,
+.footer-copyright a
+{
+  color:#000!important;
+}
+.container a {
+  color:#000;
+}
+.needs-validation button
+{
+  padding: 10px 25px;
+  font-size: 17px;
+  margin-top: 40px;
+}

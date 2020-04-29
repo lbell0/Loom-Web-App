@@ -19,23 +19,23 @@ $username_err = $password_err = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // Check if username is empty
-    if(empty(trim($_POST["cUsername"]))){
+    if(empty(trim($_POST["rUsername"]))){
         $username_err = "Please enter username.";
     } else{
-        $username = trim($_POST["cUsername"]);
+        $username = trim($_POST["rUsername"]);
     }
 
     // Check if password is empty
-    if(empty(trim($_POST["cPassword"]))){
+    if(empty(trim($_POST["rPassword"]))){
         $password_err = "Please enter your password.";
     } else{
-        $password = trim($_POST["cPassword"]);
+        $password = trim($_POST["rPassword"]);
     }
 
     // Validate credentials
     if(empty($username_err) && empty($password_err)){
         // Prepare a select statement
-        $sql = "SELECT cid, cUsername, cPassword FROM customers WHERE cUsername = ?";
+        $sql = "SELECT rid, rUsername, rPassword FROM restaurants WHERE rUsername = ?";
 
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
@@ -63,8 +63,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
 
-                            /*--Redirect user to CUSTOMER profile page--*/
-                            header("location: welcome-Customer.php");
+                            /*--Redirect user to RESTAURANT profile page--*/
+                            header("location: menu-nav.php");
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
@@ -103,11 +103,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   <script type='text/javascript' src='https://code.jquery.com/jquery-1.11.0.js'></script>
   <script type='text/javascript' src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
+
 </head>
 
 <body>
   <!-- ** NAV BAR ** -->
-<nav id = "navbarColor" class="navbar navbar-expand-lg navbar-light navbar-fixed">
+  <nav id = "navbarColor" class="navbar navbar-expand-lg navbar-light navbar-fixed">
     <a class="navbar-brand" href="#"><strong>L O O M</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -131,18 +132,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 <!-- ** LOGIN FORUM ** -->
 <div class="container h-100 col-sm-8">
-  <h2>Customer Login</h2>
+  <h2>Restaurant Login</h2>
 	<hr>
     <form id="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="needs-validation">
       <div class="form-group">
         <label for="email">Username:</label>
-        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="cUsername" value="<?php echo $username; ?>" required>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="rUsername" value="<?php echo $username; ?>" required>
         <div class="valid-feedback">Valid.</div>
         <div class="invalid-feedback">Please fill out this field.</div>
       </div>
       <div class="form-group">
         <label for="password">Password:</label>
-        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="cPassword" required>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="rPassword" required>
         <div class="valid-feedback">Valid.</div>
         <div class="invalid-feedback">Please fill out this field.</div>
       </div>
@@ -163,7 +164,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="footer-copyright text-center py-3">
       <hr class="w-25">
       <div class="footer-copyright text-center py-3">
-        <a href="/Loom/register-Customer.php" style="color: black"> Don't have an account? <strong> Click here</strong></a>
+        <a href="/Loom/register-Restaurant.php" style="color: black"> Don't have an account? <strong> Click here</strong></a>
       </div>
     </div>
   </form>

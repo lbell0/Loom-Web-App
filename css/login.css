@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+html, body {
+  height: 100%
+}
+body {
+  background-image: url('img/indexbg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.fa {
+  padding: 20px;
+  font-size: 24px;
+  width: ;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: black;
+}
+.nav-link {
+  margin-left: 20px;
+}
+.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+.alignright {
+  float: right;
+  margin-left: 15px;
+}
+.aligncenter {
+  display: block;
+  margin: 0 auto 15px;
+}
+.fix {
+  overflow: hidden
+}
+a:hover {
+  text-decoration: none
+}
+.navbar-toggler
+{
+  border: none!important; /*impt bc overriding classes/no border*/
+}
+.loginForm input[type=text], .loginForm input[type=password] {
+  margin-bottom:10px;
+}
+.loginForm input[type=submit] {
+  background:#fb044a;
+  color:#fff;
+  font-weight:700;
+}
+.container h2
+{
+  margin-top: 12%;
+  font-family: papyrus;
+  color: #FFF8EE!important;
+}
+.container label,
+.footer-copyright,
+.footer-copyright a
+{
+  color:#FFF8EE!important;
+}
+.needs-validation button
+{
+  padding: 10px 25px;
+  font-size: 17px;
+  margin-top: 40px;
+}

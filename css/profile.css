@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+html, body {
+  height: 100%;
+}
+.table{
+   display: block !important;
+   overflow-x: auto !important;
+   width: 100% !important;
+ }
+ body {
+  counter-reset: my-sec-counter;
+	height: 100%;
+	color: black;
+}
+#num::before {
+  /* Increment "my-sec-counter" by 1 */
+  counter-increment: my-sec-counter;
+  content: " " counter(my-sec-counter) ". ";
+}
+.card-columns {
+    column-count: 1;
+}
+.fa {
+	padding: 20px;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: none;
+  border-radius: 50%;
+  color: black;
+}
+.navbar-toggler {
+  border: none!important; /*impt bc overriding classes/no border*/
+}
+.navbar {
+  background-color: #D6EACC;
+}
+.navbar-brand {
+  padding-top: 10px;
+  font-weight: 900;
+  font-family: papyrus;
+}
+.nav-link {
+  margin-left: 20px;
+}
+.fa {
+  padding: 15px;
+  font-size: 19px;
+  width: ;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: black;
+}
+a:focus {
+  outline: 0 solid
+}
+.fix {
+  overflow: hidden
+}
+.container {
+  margin-top: 10%;
+}
+.container hr {
+  color: #D6EACC;
+  height: 8px;
+}
+.container h2 {
+  font-size: 30px;
+  font-family: papyrus;
+}
+.container h3 {
+  font-size: 18px;
+  font-family: papyrus;
+  text-align: center;
+  margin-top: 50px;
+}
+.row {
+  margin-top: 20px;
+}
+.caption {
+  margin-bottom:50px;
+}
+.loginForm input[type=text], .loginForm input[type=password] {
+  margin-bottom:10px;
+}
+.loginForm input[type=submit] {
+  background:#fb044a;
+  color:#fff;
+  font-weight:700;
+}
+.row {
+  style="padding:10px 20px;
+  margin-bottom: 30px;
+}

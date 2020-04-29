@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+html, body {
+  height: 100%
+}
+.navbar-toggler {
+  border: none!important; /*impt bc overriding classes/no border*/
+}
+.navbar {
+  background-color: #D6EACC;
+}
+.navbar-brand {
+  padding-top: 10px;
+  font-weight: 900;
+  font-family: papyrus;
+}
+.nav-link {
+  margin-left: 20px;
+}
+.fa {
+  padding: 15px;
+  font-size: 19px;
+  width: ;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: black;
+}
+a:focus {
+  outline: 0 solid
+}
+.fix {
+  overflow: hidden
+}
+.container {
+  margin-top: 10%;
+	text-align: start;
+	margin-top: 55px;
+	opacity: 1.0;
+}
+.container hr {
+  color: #D6EACC;
+  height: 8px;
+}
+.container h2 {
+  font-size: 30px;
+  font-family: papyrus;
+}
+.row {
+  margin-top: 20px;
+}
+.caption {
+  margin-bottom:50px;
+}
+.loginForm input[type=text], .loginForm input[type=password] {
+  margin-bottom:50px;
+}
+.loginForm input[type=submit] {
+  background:#fb044a;
+  color:#fff;
+  font-weight:700;
+}
+.row {
+  style="padding:10px 20px;
+  margin-bottom: 30px;
+}
