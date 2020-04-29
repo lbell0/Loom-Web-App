@@ -1,4 +1,4 @@
-# loom
+# Loom
 Loom.
 Payment system UI integration for restaurants and customers. This web app allows customers to independently carry out the standard ordering procedures. 
 
